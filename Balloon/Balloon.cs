@@ -35,6 +35,12 @@ namespace Balloon_Oef
             UpdateEllipse();
         }
 
+        public void MoveLeft(int xStep)
+        {
+            x = x - xStep;
+            UpdateEllipse();
+        }
+
         public void MoveUp(int yStep)
         {
             y = y - yStep;

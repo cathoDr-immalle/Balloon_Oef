@@ -22,6 +22,7 @@
         <Button x:Name="MoveUpButton" Content="Move Up" HorizontalAlignment="Left" Height="23" Margin="0,88,0,0" VerticalAlignment="Top" Width="70" Click="MoveUpButton_Click"/>
         <Button x:Name="ChangeColorButton" Content="Color" HorizontalAlignment="Left" Height="34" Margin="445,88,0,0" VerticalAlignment="Top" Width="62" Click="ChangeColorButton_Click"/>
         <Button x:Name="MoveDownButton" Content="Move Down" HorizontalAlignment="Left" Height="25" Margin="0,136,0,0" VerticalAlignment="Top" Width="70" Click="MoveDownButton_Click"/>
+        <Button x:Name="MoveLeftButton" Content="Move Left" HorizontalAlignment="Left" Height="27" Margin="0,176,0,0" VerticalAlignment="Top" Width="70" Click="MoveLeftButton_Click"/>
 
     </Grid>
 </Window>

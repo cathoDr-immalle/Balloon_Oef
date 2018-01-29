@@ -54,5 +54,10 @@ namespace Balloon_Oef
         {
             balloon1.MoveDown(10);
         }
+
+        private void MoveLeftButton_Click(object sender, RoutedEventArgs e)
+        {
+            balloon1.MoveLeft(10);
+        }
     }
 }
