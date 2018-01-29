@@ -11,13 +11,17 @@ namespace Balloon_Oef
 {
     class Balloon
     {
-        private int x = 10;
-        private int y = 10;
-        private int Diameter = 10;
+        private int x = 50;
+        private int y = 50;
+        private int Diameter = 20;
         private Ellipse ellipse;
         
         public Balloon()
         {
+            x = 50;
+            y = 50;
+            Diameter = 20;
+
             CreateEllipse();
             UpdateEllipse();
         }
@@ -27,6 +31,19 @@ namespace Balloon_Oef
             ellipse = new Ellipse();
             ellipse.Stroke = Brushes.Black;
             ellipse.StrokeThickness = 2;
+        }
+
+        public int XCoord
+        {
+            get
+            {
+                return x;
+            }
+            set
+            {
+                x = value;
+                UpdateEllipse();
+            }
         }
 
         public void MoveRight(int xStep)

@@ -57,7 +57,17 @@ namespace Balloon_Oef
 
         private void MoveLeftButton_Click(object sender, RoutedEventArgs e)
         {
-            balloon1.MoveLeft(10);
+            balloon1.MoveLeft(10); 
+        }
+
+        private void DisplayXButton_Click(object sender, RoutedEventArgs e)
+        {
+            XCoordTextBox.Text = Convert.ToString(balloon1.XCoord);
+        }
+
+        private void ChangeXButton_Click(object sender, RoutedEventArgs e)
+        {
+            balloon1.XCoord = Convert.ToInt32(XCoordTextBox.Text);
         }
     }
 }
