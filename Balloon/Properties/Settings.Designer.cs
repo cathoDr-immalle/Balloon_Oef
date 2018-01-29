@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Balloon.Properties
+namespace Balloon_Oef.Properties
 {
 
 

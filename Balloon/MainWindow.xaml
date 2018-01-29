@@ -1,12 +1,27 @@
-﻿<Window x:Class="Balloon.MainWindow"
+﻿<Window x:Class="Balloon_Oef.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Balloon"
+        xmlns:local="clr-namespace:Balloon_Oef"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="MoveRightButton" Content="Move Right" HorizontalAlignment="Left" Height="28" Margin="37,35,0,0" VerticalAlignment="Top" Width="152" Click="MoveRightButton_Click"/>
+        <Button x:Name="GrowButton" Content="Grow" HorizontalAlignment="Left" Height="28" Margin="317,35,0,0" VerticalAlignment="Top" Width="152" Click="GrowButton_Click"/>
+        <Canvas x:Name="MijnCanvas" HorizontalAlignment="Left" Height="206" Margin="79,89,0,0" VerticalAlignment="Top" Width="356" Background="#FFC7C5C5" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.207"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <Button x:Name="MoveUpButton" Content="Move Up" HorizontalAlignment="Left" Height="23" Margin="0,88,0,0" VerticalAlignment="Top" Width="70" Click="MoveUpButton_Click"/>
+        <Button x:Name="ChangeColorButton" Content="Color" HorizontalAlignment="Left" Height="34" Margin="445,88,0,0" VerticalAlignment="Top" Width="62" Click="ChangeColorButton_Click"/>
+        <Button x:Name="MoveDownButton" Content="Move Down" HorizontalAlignment="Left" Height="25" Margin="0,136,0,0" VerticalAlignment="Top" Width="70" Click="MoveDownButton_Click"/>
+
     </Grid>
 </Window>
